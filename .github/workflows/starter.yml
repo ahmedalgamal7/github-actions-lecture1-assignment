@@ -6,5 +6,9 @@ jobs:
      steps: 
       - name: checkout_complete
         uses: actions/checkout@v4
-      - name: print the directory listing
-        run: ls
+      - name: print hello world using python
+        run: print "hello world"
+        shell: python
+      - name: print hello world using bash
+        run: echo "hello world"
+        shell: python
