@@ -1,0 +1,10 @@
+name: first assignment
+on: push
+jobs:
+  first_job:
+     runs-on: ubuntu-latest
+     steps: 
+      - name: print the directory listing
+        run: ls
+      - name: checkout_complete
+        uses: actions/setup-node@v4
